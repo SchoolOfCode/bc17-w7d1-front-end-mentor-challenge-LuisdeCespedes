@@ -13,7 +13,7 @@ body{
     width: 35em;
     height: 26.5em;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 0.5em;
+    border-radius: 0.6em;
     overflow: hidden;
 }
 
@@ -43,6 +43,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 0.8em;
+    color: rgb(134, 134, 134);
 }
 
 #perfumeTitle{
@@ -112,4 +113,105 @@ body{
     font-family: 'Montserrat', sans-serif;;
 }
 
+/*///////////////////////////////////////////*/
+/*//////// MOBILE VERSION FROM HERE  ////////*/
+/*///////////////////////////////////////////*/
 
+@media (max-width: 600px){
+    @media (max-width: 600px) {
+        #super-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 39% 1fr;
+            width: 90%;
+            height: 90%;
+            max-width: 30em;
+            border-radius: 0.7em;
+        }
+
+        #columnLeft{
+            grid-column: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #perfumeText{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1em;
+            color: rgb(134, 134, 134);
+        }
+
+        #perfumeTitle{
+            display: flex;
+            position: relative;
+            font-family: 'Fraunces', serif;
+            font-weight: 800;
+            word-wrap: break-word;
+            font-size: 2.2em;
+            line-height: 1em;
+            bottom: 1.2em;
+        }
+
+        #perfumeDescription{
+            display: flex;
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 1em;
+            line-height: 1.6em;
+            color: rgb(134, 134, 134);
+            bottom: 1.9em;
+        }
+
+        #bigPrice{
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            color: #3d8168;
+            font-size: 2.3em;
+            padding: 0em 0.4em 0.4em 0
+        }
+
+        #smallPrice{
+            display:flex;
+            position: relative;
+            bottom: 1.3em;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9em;
+            align-items: center;
+            color: rgb(134, 134, 134);
+            padding: 0em 0em 0em 0.3em;
+        }
+
+        #AddToCartButton{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            position: relative;
+            background-color: #3d8168;
+            border: none;
+            border-radius: 0.6em;
+            height:4.2em;
+            bottom: 1.7em;
+            justify-content: right;
+            align-items: center;
+        }
+
+        #iconCart{
+            padding: 0 0 0 7.8em;
+
+        }
+        
+        #buttonText{
+            display: flex;
+            position: relative;
+            right: 2em;
+            color: whitesmoke;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            font-weight: 700;
+
+        }
+        
+}
+}
