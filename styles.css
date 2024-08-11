@@ -1,0 +1,115 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background-color: #ffe9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#super-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+    width: 35em;
+    height: 26.5em;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+#columnLeft{
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#columnRight{
+    display: grid;
+    grid-template-rows: 60% 1fr;
+    align-items: left;
+    padding: 2em 2em 0em 1.8em;
+}
+
+#textSection{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* background-color: blue; */
+    color: hsl(212, 21%, 14%);
+    justify-content: space-around;
+}
+
+#perfumeText{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+#perfumeTitle{
+    display: flex;
+    position: relative;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    font-size: 1.85em;
+    line-height: 1em;
+    bottom: 1.2em;
+}
+
+#perfumeDescription{
+    display: flex;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    color: rgb(134, 134, 134);
+    bottom: 1.1em;
+}
+
+#priceSection{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#TwoPrices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+#bigPrice{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: #3d8168;
+    font-size: 1.9em;
+    padding: 0.5em 0.4em 0.4em 0
+}
+
+#smallPrice{
+    display:flex;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 0.8em;
+     align-items: center;
+     color: rgb(134, 134, 134);
+     padding: 0em 0em 0.7em 0.3em;
+}
+
+#AddToCartButton{
+    background-color: #3d8168;
+    border: none;
+    border-radius: 0.5em;
+    height:3.3em;
+}
+
+#iconCart{
+    padding: 0 0.3em 0 0
+}
+
+#buttonText{
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+
